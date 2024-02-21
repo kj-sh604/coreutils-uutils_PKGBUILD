@@ -50,6 +50,8 @@ package() {
       PREFIX=/usr \
       MANDIR=/share/man/man1 \
       PROG_PREFIX= \
+      PROFILE=release \
+      MULTICALL=y \
       install
 
   # install gnu coreutils over the uutils-coreutils
