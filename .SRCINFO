@@ -1,5 +1,5 @@
-pkgbase = rust-uutils-as-coreutils
-	pkgdesc = Cross-platform Rust rewrite of the GNU coreutils being used as actual coreutils
+pkgbase = coreutils-uutils
+	pkgdesc = Cross-platform Rust rewrite of the GNU coreutils being used as actual system coreutils
 	pkgver = 0.0.24
 	pkgrel = 604
 	url = https://github.com/uutils/coreutils
@@ -19,4 +19,4 @@ pkgbase = rust-uutils-as-coreutils
 	source = uutils-coreutils-0.0.24.tar.gz::https://github.com/uutils/coreutils/archive/0.0.24.tar.gz
 	sha512sums = da9028effede4e925263244f0fdcfdd13f4d44a4baf2da57df090aad8c3821b880a10dbb74d8e1e2958f324299f63ebdbd1bb068895c000835b1bb12fcccc599
 
-pkgname = rust-uutils-as-coreutils 
+pkgname = coreutils-uutils
