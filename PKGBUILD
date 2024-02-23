@@ -60,7 +60,7 @@ package() {
       PROFILE=release \
       MULTICALL=y \
       install
-  # merge specified gnu coreutils with the rust uutils 
+  # merge specified gnu coreutils with the rust uutils
   cd $srcdir && cd $gnu_coreutils-$gnu_coreutils_version
   make DESTDIR="$pkgdir" install
   # add libstdbuf.so
