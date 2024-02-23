@@ -51,7 +51,6 @@ build() {
 }
 
 package() {
-  # install uutils-coreutils, skip the buggy parts
   cd $gnu_coreutils-$rust_uutils_version
   make \
       DESTDIR="$pkgdir" \
@@ -61,10 +60,10 @@ package() {
       PROFILE=release \
       MULTICALL=y \
       install
-  # install gnu coreutils over the uutils-coreutils
+  # merge specified gnu coreutils with the rust uutils 
   cd $srcdir && cd $gnu_coreutils-$gnu_coreutils_version
   make DESTDIR="$pkgdir" install
-  # libstdbuf.so compatibility
+  # add libstdbuf.so
   mkdir -p $pkgdir/usr/lib/coreutils
   cd $srcdir && cd $gnu_coreutils-$rust_uutils_version/target/release/deps
   mv liblibstdbuf.so $pkgdir/usr/lib/coreutils/libstdbuf.so
