@@ -74,7 +74,7 @@ package() {
   # symlink missing binaries
   if [ -f "coreutils" ]; then
     local binaries=(
-      "b2sum" "b3sum" "install" "md5sum" "sha1sum" "sha224sum" 
+      "b2sum" "b3sum" "install" "md5sum" "sha1sum" "sha224sum"
       "sha256sum" "sha3-224sum" "sha3-256sum" "sha3-384sum" "sha3-512sum"
       "sha384sum" "sha3sum" "sha512sum" "shake128sum" "shake256sum"
     )
