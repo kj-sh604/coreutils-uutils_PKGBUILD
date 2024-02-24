@@ -41,7 +41,7 @@ build() {
       --with-openssl \
       --enable-no-install-program="[,arch,b2sum,base32,base64,basename,basenc,cat,\
       chgrp,chmod,chown,chroot,cksum,comm,cp,csplit,cut,date,dd,df,dir,dircolors,\
-      dirname,du,echo,env,expand,expr,factor,false,fmt,fold,head,hostid,id,\
+      dirname,du,echo,env,expand,expr,factor,false,fmt,fold,head,hostid,id,install,\
       join,link,ln,logname,ls,md5sum,mkdir,mkfifo,mknod,mktemp,mv,nice,nl,nohup,\
       nproc,numfmt,od,paste,pathchk,pinky,pr,printenv,printf,ptx,pwd,readlink,\
       realpath,rm,rmdir,seq,sha1sum,sha224sum,sha256sum,sha384sum,sha512sum,\
@@ -69,11 +69,11 @@ package() {
   mv liblibstdbuf.so $pkgdir/usr/lib/coreutils/libstdbuf.so
   # clean conflicts, arch ships these in other apps
   cd $pkgdir/usr/bin
-  rm groups hostname kill more uptime
+  rm groups hostname install kill more uptime
   # symlink missing binaries
   if [ -f "coreutils" ]; then
     local binaries=(
-      "b2sum" "b3sum" "md5sum" "sha1sum" "sha224sum"
+      "b2sum" "b3sum" "install" "md5sum" "sha1sum" "sha224sum"
       "sha256sum" "sha3-224sum" "sha3-256sum" "sha3-384sum" "sha3-512sum"
       "sha384sum" "sha3sum" "sha512sum" "shake128sum" "shake256sum"
     )
