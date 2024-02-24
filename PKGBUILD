@@ -85,5 +85,5 @@ package() {
   fi
   # additional cleanup
   rm $pkgdir/usr/share/bash-completion/completions/*
-  rm $pkgdir/usr/share/man/man1/{groups.1,hostname.1,kill.1,more.1,uptime.1}
+  rm $pkgdir/usr/share/man/man1/{groups.1,hostname.1,install.1,kill.1,more.1,uptime.1}
 }
