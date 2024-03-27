@@ -1,10 +1,10 @@
 pkgname=coreutils-uutils
-pkgver=0.0.24
+pkgver=0.0.25
 pkgrel=604
 gnu_coreutils=coreutils
 rust_uutils=uutils-coreutils
 gnu_coreutils_version=9.4
-rust_uutils_version=0.0.24
+rust_uutils_version=0.0.25
 pkgdesc='Cross-platform Rust rewrite of the GNU coreutils being used as actual system coreutils'
 arch=('x86_64')
 license=('GPL3' 'MIT')

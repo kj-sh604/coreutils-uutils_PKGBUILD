@@ -1,6 +1,6 @@
 pkgbase = coreutils-uutils
     pkgdesc = Cross-platform Rust rewrite of the GNU coreutils being used as actual system coreutils
-    pkgver = 0.0.24
+    pkgver = 0.0.25
     pkgrel = 604
     url = https://www.gnu.org/software/coreutils/
 	url = https://github.com/uutils/coreutils
